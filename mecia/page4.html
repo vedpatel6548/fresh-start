@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title<h1 style="text-align:center;font-family:BOLD;"></title>
+        <link rel="stylesheet" href="page4.css">
+</head>
+<body></body>              
+   
+        <h1 style="font-family: algerian;">Worker Login</h1>
+        <p>Enter your login credentials to access your account</p>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <button class="login" onclick="login()">Login</button>
+        </form>
+    
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worker Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="worker-registration">
+        <h1 style="font-family: algerian;">Worker Registration</h1>
+        <p>Enter your details to register as a worker</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone"><br><br>
+            <label for="address">Address:</label>
+            <textarea id="address" name="address"></textarea><br><br>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password"><br><br>
+            <button class="register" onclick="register()">Register</button>
+        </form>
+        
+    </section>
+    <script>
+        function register() {
+            // Get the registration details from the form
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+            var address = document.getElementById("address").value;
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirm-password").value;
+            // Check if the password and confirm password match
+            if (password !== confirmPassword) {
+                alert("Password and confirm password do not match");
+                return;
+            }
+            // Check if the username is already taken
+            if (username === "worker1") {
+                alert("Username is already taken");
+                return;
+            }
+            // Register the worker and redirect to login page
+            window.location.href = 'worker-login.html';
+        }
+    </script>
+</body>
+</html>
+    </section>
+    <script>
+        function login() {
+            // Get the username and password from the form
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            // Check if the username and password are correct
+            if (username === "worker1" && password === "password1") {
+                // Login successful, redirect to worker dashboard
+                window.location.href = 'worker-dashboard.html';
+            } else {
+                // Login failed, display error message
+                alert("Invalid username or password");
+            }
+        }
+    </script>
+</body>
+</html>`

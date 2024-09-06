@@ -1,0 +1,7 @@
+
+* {
+    background-image: url(./bg5.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensures the image covers the whole screen */
+    background-position: center; /* Optional: Centers the image */
+}

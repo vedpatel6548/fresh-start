@@ -1,0 +1,440 @@
+<style>:root{--background:0 0% 100%;--foreground:240 10% 3.9%;--card:0 0% 100%;--card-foreground:240 10% 3.9%;--popover:0 0% 100%;--popover-foreground:240 10% 3.9%;--primary:240 5.9% 10%;--primary-foreground:0 0% 98%;--secondary:240 4.8% 95.9%;--secondary-foreground:240 5.9% 10%;--muted:240 4.8% 95.9%;--muted-foreground:240 3.8% 45%;--accent:240 4.8% 95.9%;--accent-foreground:240 5.9% 10%;--destructive:0 72% 51%;--destructive-foreground:0 0% 98%;--border:240 5.9% 90%;--input:240 5.9% 90%;--ring:240 5.9% 10%;--chart-1:173 58% 39%;--chart-2:12 76% 61%;--chart-3:197 37% 24%;--chart-4:43 74% 66%;--chart-5:27 87% 67%;--radius:0.5rem;}</style>
+<style>h1, h2, h3, h4, h5, h6 { font-family: 'Inter', sans-serif; --font-sans-serif: 'Inter'; }
+</style>
+<style>body { font-family: 'Inter', sans-serif; --font-sans-serif: 'Inter'; }
+</style>
+<div class="flex flex-col min-h-[100dvh]">
+  <header class="bg-primary text-primary-foreground py-4 px-6 flex items-center justify-between">
+    <a class="flex items-center gap-2" href="#">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="h-6 w-6"
+      >
+        <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+        <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+      </svg>
+      <span class="text-xl font-bold">FRESH START</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-6">
+      <a class="hover:underline underline-offset-4" href="#">
+        Tiffin Services
+      </a>
+      <a class="hover:underline underline-offset-4" href="#">
+        Home Services
+      </a>
+      <a class="hover:underline underline-offset-4" href="#">
+        Contact
+      </a>
+    </nav>
+    <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 md:hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="h-6 w-6"
+      >
+        <line x1="4" x2="20" y1="12" y2="12"></line>
+        <line x1="4" x2="20" y1="6" y2="6"></line>
+        <line x1="4" x2="20" y1="18" y2="18"></line>
+      </svg>
+    </button>
+  </header>
+  <main class="flex-1">
+    <section class="bg-primary py-12 md:py-24 px-6">
+      <div class="container mx-auto grid md:grid-cols-2 gap-8 items-center">
+        <div class="space-y-4">
+          <h1 class="text-4xl font-bold text-primary-foreground">Healthy Meals Delivered to Your Door</h1>
+          <p class="text-primary-foreground/80 text-lg">
+            UrbanCare offers delicious and nutritious tiffin delivery and home services to keep you and your family
+            healthy.
+          </p>
+          <div class="flex gap-4">
+            <a
+              class="inline-flex items-center justify-center rounded-md bg-primary-foreground px-6 py-3 text-sm font-medium text-primary shadow-sm transition-colors hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+              href="#"
+            >
+              Tiffin Services
+            </a>
+            <a
+              class="inline-flex items-center justify-center rounded-md border border-primary-foreground px-6 py-3 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary-foreground hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+              href="#"
+            >
+              Home Services
+            </a>
+          </div>
+        </div>
+        <img
+          src="/placeholder.svg"
+          width="600"
+          height="400"
+          alt="Tiffin Delivery"
+          class="mx-auto rounded-lg shadow-lg"
+          style="aspect-ratio:600/400;object-fit:cover"
+        />
+      </div>
+    </section>
+    <section id="tiffin" class="py-12 md:py-24 px-6">
+      <div class="container mx-auto space-y-8">
+        <div class="text-center space-y-4">
+          <h2 class="text-3xl font-bold">Tiffin Delivery Services</h2>
+          <p class="text-muted-foreground text-lg">Get healthy, delicious meals delivered to your doorstep.</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+            <div class="p-6 space-y-4">
+              <div class="flex items-center gap-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="h-8 w-8 text-primary"
+                >
+                  <path d="M12 3V2"></path>
+                  <path d="M5 10a7.1 7.1 0 0 1 14 0"></path>
+                  <path d="M4 10h16"></path>
+                  <path d="M2 14h12a2 2 0 1 1 0 4h-2"></path>
+                  <path d="m15.4 17.4 3.2-2.8a2 2 0 0 1 2.8 2.9l-3.6 3.3c-.7.8-1.7 1.2-2.8 1.2h-4c-1.1 0-2.1-.4-2.8-1.2L5 18"></path>
+                  <path d="M5 14v7H2"></path>
+                </svg>
+                <h3 class="text-xl font-bold">Standard Tiffin</h3>
+              </div>
+              <p class="text-muted-foreground">A balanced meal with a main dish, side, and dessert.</p>
+              <div class="flex items-center justify-between">
+                <span class="text-2xl font-bold">₹99</span>
+                <a
+                  class="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                  href="#"
+                >
+                  Order Now
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+            <div class="p-6 space-y-4">
+              <div class="flex items-center gap-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="h-8 w-8 text-primary"
+                >
+                  <path d="M7 21h10"></path>
+                  <path d="M12 21a9 9 0 0 0 9-9H3a9 9 0 0 0 9 9Z"></path>
+                  <path d="M11.38 12a2.4 2.4 0 0 1-.4-4.77 2.4 2.4 0 0 1 3.2-2.77 2.4 2.4 0 0 1 3.47-.63 2.4 2.4 0 0 1 3.37 3.37 2.4 2.4 0 0 1-1.1 3.7 2.51 2.51 0 0 1 .03 1.1"></path>
+                  <path d="m13 12 4-4"></path>
+                  <path d="M10.9 7.25A3.99 3.99 0 0 0 4 10c0 .73.2 1.41.54 2"></path>
+                </svg>
+                <h3 class="text-xl font-bold">Vegetarian Tiffin</h3>
+              </div>
+              <p class="text-muted-foreground">A delicious vegetarian meal with a variety of dishes.</p>
+              <div class="flex items-center justify-between">
+                <span class="text-2xl font-bold">₹89</span>
+                <a
+                  class="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                  href="#"
+                >
+                  Order Now
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+            <div class="p-6 space-y-4">
+              <div class="flex items-center gap-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="h-8 w-8 text-primary"
+                >
+                  <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"></path>
+                  <path d="M7 2v20"></path>
+                  <path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"></path>
+                </svg>
+                <h3 class="text-xl font-bold">Premium Tiffin</h3>
+              </div>
+              <p class="text-muted-foreground">A deluxe tiffin with gourmet dishes and premium ingredients.</p>
+              <div class="flex items-center justify-between">
+                <span class="text-2xl font-bold">₹149</span>
+                <a
+                  class="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                  href="#"
+                >
+                  Order Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="home" class="py-12 md:py-24 px-6 bg-muted">
+      <div class="container mx-auto space-y-8">
+        <div class="text-center space-y-4">
+          <h2 class="text-3xl font-bold">Home Services</h2>
+          <p class="text-muted-foreground text-lg">
+            Enjoy a range of home services to keep your space clean and organized.
+          </p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+            <div class="p-6 space-y-4">
+              <div class="flex items-center gap-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="h-8 w-8 text-primary"
+                >
+                  <path d="m9.06 11.9 8.07-8.06a2.85 2.85 0 1 1 4.03 4.03l-8.06 8.08"></path>
+                  <path d="M7.07 14.94c-1.66 0-3 1.35-3 3.02 0 1.33-2.5 1.52-2 2.02 1.08 1.1 2.49 2.02 4 2.02 2.2 0 4-1.8 4-4.04a3.01 3.01 0 0 0-3-3.02z"></path>
+                </svg>
+                <h3 class="text-xl font-bold">Cleaning Services</h3>
+              </div>
+              <p class="text-muted-foreground">Professional cleaning for your home or office.</p>
+              <div class="flex items-center justify-between">
+                <span class="text-2xl font-bold">₹499</span>
+                <a
+                  class="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                  href="#"
+                >
+                  Book Now
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+            <div class="p-6 space-y-4">
+              <div class="flex items-center gap-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="h-8 w-8 text-primary"
+                >
+                  <path d="M3 6h3"></path>
+                  <path d="M17 6h.01"></path>
+                  <rect width="18" height="20" x="3" y="2" rx="2"></rect>
+                  <circle cx="12" cy="13" r="5"></circle>
+                  <path d="M12 18a2.5 2.5 0 0 0 0-5 2.5 2.5 0 0 1 0-5"></path>
+                </svg>
+                <h3 class="text-xl font-bold">Laundry Services</h3>
+              </div>
+              <p class="text-muted-foreground">Hassle-free laundry and dry cleaning.</p>
+              <div class="flex items-center justify-between">
+                <span class="text-2xl font-bold">₹299</span>
+                <a
+                  class="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                  href="#"
+                >
+                  Book Now
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+            <div class="p-6 space-y-4">
+              <div class="flex items-center gap-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="h-8 w-8 text-primary"
+                >
+                  <path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0"></path>
+                  <path d="M14 10V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v2"></path>
+                  <path d="M10 10.5V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v8"></path>
+                  <path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"></path>
+                </svg>
+                <h3 class="text-xl font-bold">Handyman Services</h3>
+              </div>
+              <p class="text-muted-foreground">Professional handyman services for your home.</p>
+              <div class="flex items-center justify-between">
+                <span class="text-2xl font-bold">₹399</span>
+                <a
+                  class="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                  href="#"
+                >
+                  Book Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="py-12 md:py-24 px-6">
+      <div class="container mx-auto space-y-8">
+        <div class="text-center space-y-4">
+          <h2 class="text-3xl font-bold">Contact Us</h2>
+          <p class="text-muted-foreground text-lg">
+            Get in touch with us for more information or to schedule a service.
+          </p>
+        </div>
+        <form class="max-w-md mx-auto space-y-4">
+          <input
+            class="flex h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full"
+            type="text"
+            placeholder="Name"
+          />
+          <input
+            class="flex h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full"
+            type="email"
+            placeholder="Email"
+          />
+          <textarea
+            class="flex min-h-[80px] rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full"
+            placeholder="Message"
+            rows="5"
+          ></textarea>
+          <button
+            class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full"
+            type="submit"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </section>
+    <section class="py-12 md:py-24 px-6 bg-muted">
+      <div class="container mx-auto space-y-8">
+        <div class="text-center space-y-4">
+          <h2 class="text-3xl font-bold">What Our Customers Say</h2>
+          <p class="text-muted-foreground text-lg">Hear from our satisfied customers.</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+            <div class="p-6 space-y-4">
+              <div class="flex items-center gap-3">
+                <span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full">
+                  <span class="flex h-full w-full items-center justify-center rounded-full bg-muted">JD</span>
+                </span>
+                <div>
+                  <h4 class="font-bold">John Doe</h4>
+                  <p class="text-muted-foreground text-sm">Satisfied Customer</p>
+                </div>
+              </div>
+              <p class="text-muted-foreground">
+                "UrbanCare has been a game-changer for my family. The tiffin\n delivery is delicious and convenient,
+                and the home services\n have made our lives so much easier."
+              </p>
+            </div>
+          </div>
+          <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+            <div class="p-6 space-y-4">
+              <div class="flex items-center gap-3">
+                <span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full">
+                  <span class="flex h-full w-full items-center justify-center rounded-full bg-muted">JD</span>
+                </span>
+                <div>
+                  <h4 class="font-bold">Jane Smith</h4>
+                  <p class="text-muted-foreground text-sm">Satisfied Customer</p>
+                </div>
+              </div>
+              <p class="text-muted-foreground">
+                "I've been using UrbanCare's services for over a year now,\n and I couldn't be happier. The quality
+                of the food and the\n reliability of the home services are top-notch."
+              </p>
+            </div>
+          </div>
+          <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+            <div class="p-6 space-y-4">
+              <div class="flex items-center gap-3">
+                <span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full">
+                  <span class="flex h-full w-full items-center justify-center rounded-full bg-muted">JD</span>
+                </span>
+                <div>
+                  <h4 class="font-bold">Michael Johnson</h4>
+                  <p class="text-muted-foreground text-sm">Satisfied Customer</p>
+                </div>
+              </div>
+              <p class="text-muted-foreground">
+                "UrbanCare has been a lifesaver for me. The tiffin delivery\n is always on time, and the home
+                services have made my life\n so much easier. I highly recommend their services."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-primary text-primary-foreground py-6 px-6">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+      <div class="flex items-center gap-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="h-6 w-6"
+        >
+          <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+          <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+        </svg>
+        <span class="text-xl font-bold">UrbanCare</span>
+      </div>
+      <nav class="flex items-center gap-6 mt-4 md:mt-0">
+        <a class="hover:underline underline-offset-4" href="#">
+          About
+        </a>
+        <a href="#"></a>
+      </nav>
+    </div>
+  </footer>
+</div>

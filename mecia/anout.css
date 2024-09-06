@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .buttons {
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  
+  
+  .work-btn:hover, .hire-btn:hover {
+    background-color: #3e8e41;
+  }
+  
+  ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;            /* Remove default padding */
+    margin: 0;             /* Remove default margin */
+    display: flex;         /* Use flexbox for horizontal layout */
+  }
+  
+  li {
+    margin-right: 20px; /* Space between items */
+  }
+  li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+  }
+  
+  
+  #bgimg{
+    
+    background-image: url(bg3.jpeg);
+    background-size: cover;
+  }
